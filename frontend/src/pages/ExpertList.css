@@ -1,0 +1,221 @@
+.list-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.header-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-light);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dim);
+  font-size: 1.2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 36px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.cat-btn {
+  padding: 7px 14px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.2s;
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.cat-btn:hover { border-color: var(--accent); color: var(--accent-light); }
+.cat-btn.active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent-light); }
+
+.expert-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.expert-card-header {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.expert-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--accent-dim);
+  border: 1px solid var(--border-light);
+  flex-shrink: 0;
+}
+
+.expert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.expert-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.expert-card-body { flex: 1; }
+
+.expert-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.expert-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.meta-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  font-family: var(--font-display);
+}
+
+.meta-val {
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.meta-rate { color: var(--gold); font-weight: 600; }
+
+.expert-card-footer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.view-profile {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  transition: letter-spacing 0.2s;
+}
+
+.expert-card:hover .view-profile { letter-spacing: 0.05em; }
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 80px 20px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-icon { font-size: 2.5rem; color: var(--text-dim); }
+.empty-state h3 { font-family: var(--font-display); font-weight: 700; color: var(--text); }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.page-numbers { display: flex; gap: 6px; }
+
+.page-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.page-btn:hover { border-color: var(--accent); color: var(--accent-light); }
+.page-btn.active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent-light); }
